@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Big Data by Kyle Ledbetter</title>
+	<link href="assets/css/application.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond/respond.min.js"></script>
+	<![endif]-->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<link href="assets/ico/favicon.png" rel="shortcut icon" type="image/x-icon" />
+	<script src="assets/js/modernizr.custom.js"></script>
+</head>
+<body class="no-touch">
+	<header class="header header-primary header-sidebar header-appbar">
+		<a class="sidebar-toggle pull-left btn btn-lg btn-none"><span aria-hidden="true" class="icon-menu-3"></span></a>
+		<div class="dropdown pull-right">
+			<a data-toggle="dropdown" href="#" class="btn btn-lg btn-none"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" width="20" alt="..."> Michael <span aria-hidden="true" class="icon-arrow-down-2 text-sm"></span></a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#">View Profile</a></li>
+				<li><a href="#">Edit Account</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Sign Out</a></li>
+			</ul>
+		</div>
+		<form>
+			<input type="search" class="input-search input-lg pull-left" placeholder="Search"><a class="btn btn-lg btn-search pull-left"><span aria-hidden="true" class="icon-search"></span></a>
+		</form>
+	</header>
+	<!-- begin content -->
+	<div class="content content-sidebar content-appbar">
+		<div class="row">
+			<!-- begin column -->
+			<div class="col-sm-12">
+				<div class="clearfix">
+					<div class="btn-toolbar pull-right">
+						<div class="btn-group">
+							<button type="button" class="btn btn-info btn-sm btn-wide-sm dropdown-toggle" data-toggle="dropdown">
+							New <span class="icon-arrow-down-2"></span>
+							</button>
+							<ul class="dropdown-menu pull-right" role="menu">
+							<li><a href="#">Admin</a></li>
+							<li><a href="#">Operator</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn-toolbar pull-left">
+						<div class="btn-group">
+							<input type="search" class="form-control input-sm" placeholder="filter search" />
+						</div>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+								Admins &amp; Operators <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Admins</a></li>
+								<li><a href="#">Operators</a></li>
+								<li class="divider"></li>
+								<li><a href="#">All</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-10">
+								Name
+							</div>
+							<div class="col-xs-1">
+								Operator
+							</div>
+							<div class="col-xs-1">
+								Admin
+							</div>
+						</div>
+					</div>
+					<div class="list-group list-group-striped">
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-xs-10">
+									<div class="media">
+										<img class="pull-left media-object img-circle" src="assets/images/avatars/barry_128.jpg" alt="..." width="32">
+										<div class="media-body">
+											<div class="h4">Barry Zuckerhorn</div>
+											<div class="text-md">barry_zuckerhorn</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked/>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox"  />
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-xs-10">
+									<div class="media">
+										<img class="pull-left media-object img-circle" src="assets/images/avatars/buster_128.jpg" alt="..." width="32">
+										<div class="media-body">
+											<div class="h4">Buster Bluth</div>
+											<div class="text-md">buster_bluth</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" />
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-xs-10">
+									<div class="media">
+										<img class="pull-left media-object img-circle" src="assets/images/avatars/george_128.jpg" alt="..." width="32">
+										<div class="media-body">
+											<div class="h4">George Bluth</div>
+											<div class="text-md">george_bluth</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-xs-10">
+									<div class="media">
+										<img class="pull-left media-object img-circle" src="assets/images/avatars/george-michael_128.jpg" alt="..." width="32">
+										<div class="media-body">
+											<div class="h4">George-Michael Bluth</div>
+											<div class="text-md">george-michael</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-xs-10">
+									<div class="media">
+										<img class="pull-left media-object img-circle" src="assets/images/avatars/gob_128.jpg" alt="..." width="32">
+										<div class="media-body">
+											<div class="h4">Gob Bluth</div>
+											<div class="text-md">gob_bluthe</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked/>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox"  />
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-xs-10">
+									<div class="media">
+										<img class="pull-left media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="32">
+										<div class="media-body">
+											<div class="h4">Tobias Funke</div>
+											<div class="text-md">tobias_funke</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" />
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-xs-10">
+									<div class="media">
+										<img class="pull-left media-object img-circle" src="assets/images/avatars/lucille_128.jpg" alt="..." width="32">
+										<div class="media-body">
+											<div class="h4">Lucille Bluth</div>
+											<div class="text-md">lucille_bluth</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" />
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-xs-10">
+									<div class="media">
+										<img class="pull-left media-object img-circle" src="assets/images/avatars/maeby_128.jpg" alt="..." width="32">
+										<div class="media-body">
+											<div class="h4">Maeby Funke</div>
+											<div class="text-md">maeby_funke</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-xs-10">
+									<div class="media">
+										<img class="pull-left media-object img-circle" src="assets/images/avatars/michael_128.jpg" alt="..." width="32">
+										<div class="media-body">
+											<div class="h4">Michael Bluth</div>
+											<div class="text-md">michael_bluth</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+								<div class="col-xs-1">
+									<input type="checkbox" checked />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn-group btn-group-justified">
+						<a href="#" class="btn btn-primary" disabled="disabled">Prev</a>
+						<a href="#" class="btn btn-primary">Next</a>
+					</div>
+				</div>
+			</div>
+			<!-- end column -->
+		</div>
+		<hr />
+		<footer class="text-center text-sm text-muted">
+			<p>&copy; 2014 Kyle Ledbetter, Inc.</p>
+		</footer>
+	</div>
+	<!-- end content -->
+
+	<!-- begin appbar -->
+	<div class="appbar">
+		<ul class="nav nav-stacked text-center">
+			<li class="">
+				<a href="index.html" data-toggle="tooltip" data-placement="bottom" title="App Store">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#store"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="active">
+				<a href="realtime.html" data-toggle="tooltip" data-placement="bottom" title="Realtime">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#clock"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Insights">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#eye"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="App Launcher">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#rocket"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Revenue">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#bill"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="File Repo">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#cloud-up"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Cron Calculator">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#calc"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Docs">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#bookshelf"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Notification Center">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#open-letter"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Web Manager">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#www"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+		</ul>
+		<hr />
+	</div>
+	<!-- end appbar -->
+
+	<!-- begin sidebar -->
+	<div class="sidebar sidebar-appbar">
+		<div class="sidebar-heading">
+			<a class="appbar-toggle pull-left btn btn-lg btn-none"><span aria-hidden="true" class="icon-grid-3"></span></a>
+			<a class="sidebar-brand" href="#">
+				<span class="icon-database text-md"></span> 
+				Big Data
+			</a>
+		</div>
+		<ul class="nav nav-stacked">
+			<li class=""><a href="realtime.html"><span aria-hidden="true" class="icon-dashboard text-warning"></span> Dashboard</a></li>
+			<li class=""><a href="sources.html"><span aria-hidden="true" class="icon-cube4 text-warning"></span> Data Sources</a></li>
+			<li class=""><a href="metrics.html"><span aria-hidden="true" class="icon-chart text-warning"></span> Metrics</a></li>
+			<li class="active"><a href="users.html"><span aria-hidden="true" class="icon-users text-warning"></span> Users</a></li>
+		</ul>
+		<hr />
+	</div>
+	<!-- end sidebar -->
+
+	<!-- begin aside -->
+	<div class="aside">
+		<div class="aside-heading">
+			<a class="aside-toggle pull-left btn btn-none btn-lg"><span aria-hidden="true" class="icon-cancel-circle"></span></a>
+			<form class="aside-form" role="search">
+				<input type="text" class="form-control input-small" placeholder="Search">
+			</form>
+		</div>
+
+		<ul class="nav nav-stacked">
+			<li class="nav-heading">Tags</li>
+		</ul>
+		<ul class="tags">
+			<li><a href="#" class="tag">task</a></li>
+			<li><a href="#" class="tag">file</a></li>
+			<li><a href="#" class="tag">event</a></li>
+			<li><a href="#" class="tag">reminder</a></li>
+			<li><a href="#" class="tag">html</a></li>
+			<li><a href="#" class="tag">css</a></li>
+			<li><a href="#" class="tag">javascript</a></li>
+			<li><a href="#" class="tag">angular</a></li>
+			<li><a href="#" class="tag">jade</a></li>
+			<li><a href="#" class="tag">node</a></li>
+			<li><a href="#" class="tag">express</a></li>
+			<li><a href="#" class="tag">ruby</a></li>
+			<li><a href="#" class="tag">rails</a></li>
+			<li><a href="#" class="tag">product</a></li>
+			<li><a href="#" class="tag">ux</a></li>
+		</ul>
+		<hr />
+		<ul class="nav nav-stacked">
+			<li class="nav-heading">Search Results</li>
+			<li>
+				<a href="metric.html">
+					<div class="media">
+						<span aria-hidden="true" class="icon-chart pull-left"></span>
+						<div class="media-body">
+							<div class="media-heading">Metric Name</div>
+							<div class="media-text text-md">
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="source.html">
+					<div class="media">
+						<span aria-hidden="true" class="icon-cube4 pull-left"></span>
+						<div class="media-body">
+							<div class="media-heading">Source Name</div>
+							<div class="media-text text-md">
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="metric.html">
+					<div class="media">
+						<span aria-hidden="true" class="icon-chart pull-left"></span>
+						<div class="media-body">
+							<div class="media-heading">Metric Name</div>
+							<div class="media-text text-md">
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="source.html">
+					<div class="media">
+						<span aria-hidden="true" class="icon-cube4 pull-left"></span>
+						<div class="media-body">
+							<div class="media-heading">Source Name</div>
+							<div class="media-text text-md">
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- end aside -->
+	<!-- begin modal -->
+	<div class="modal fade modal-chat-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="28">
+						</a>
+						<div class="media-body">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4>Tobias Funke</h4>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body">
+					<h5 class="text-large">Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</h5>
+					<div class="text-muted">12:48 PM - 9/09/2013</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end modal -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/application.js"></script>
+
+	<script>
+      var url ='assets/svg/icons.svg';
+      var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
+      document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
+    </script>
+
+    <link href="assets/icheck/square/grey.css" rel="stylesheet">
+	<script src="assets/js/jquery.icheck.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('input[type=checkbox], input[type=radio]').iCheck({
+			checkboxClass: 'icheckbox_square-grey',
+			radioClass: 'iradio_square-grey',
+			increaseArea: '20%' // optional
+		});
+	});
+	</script>
+</body>
+</html>

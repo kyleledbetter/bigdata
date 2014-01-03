@@ -1,0 +1,438 @@
+//
+// Theme
+// --------------------------------------------------
+/* Header Colors */
+.header-primary {
+  background-color: @brand;
+}
+.header-info {
+  background-color: @brand-info;
+}
+.header-success {
+  background-color: @brand-success;
+}
+.header-warning {
+  background-color: @brand-warning;
+}
+.header-danger {
+  background-color: @brand-danger;
+}
+.header-inverse {
+  background-color: @brand-inverse;
+}
+.header-gray {
+  background-color: @text-color;
+}
+/* Text */
+.text-muted {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.text-success-light {
+  color: @brand-success-light;
+}
+.text-success-dark {
+  color: @brand-success-dark;
+}
+.text-info-light {
+  color: @brand-info-light;
+}
+.text-info-dark {
+  color: @brand-info-dark;
+}
+.text-primary {
+  color: @brand-primary;
+}
+.text-primary-light {
+  color: @brand-primary-light;
+}
+.text-primary-dark {
+  color: @brand-primary-dark;
+}
+.text-warning-light {
+  color: @brand-warning-light;
+}
+.text-warning-dark {
+  color: @brand-warning-dark;
+}
+.text-danger-light {
+  color: @brand-danger-light;
+}
+.text-danger-dark {
+  color: @brand-danger-dark;
+}
+.text-inverse {
+  color: @brand-inverse;
+}
+.text-inverse-inverse {
+  color: @brand-inverse-light;
+}
+.text-inverse-inverse {
+  color: @brand-inverse-dark;
+}
+
+/* Buttons */
+.btn-none {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    background: transparent;
+    outline: 0;
+    .box-shadow (none);
+    color: lighten(@btn-default-color, 30%);
+  }
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+.btn-trans {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    background: rgba(0, 0, 0, 0.15);
+  }
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+.btn-round {
+  border-radius: 20px;
+  padding: 3px 6px;
+}
+.btn-wide-xs {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.btn-wide-sm {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.btn-wide-md {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn-wide-lg {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.btn {
+  border-width: 2px;
+}
+.btn-xs {
+  border-width: 1px;
+}
+/* Header */
+.header {
+  .box-shadow (0 4px 0 rgba(0, 0, 0, 0.1));
+
+  a {
+    color: @brand-toupe;
+  }
+  .btn-trans:hover {
+    color: lighten(@brand-toupe, 10%);
+  }
+  .h4 {
+    font-weight: 200;
+    line-height: 1.5;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+  }
+
+  &.header-aside {
+    border-top-right-radius: 10px;
+    .box-shadow (~"0 4px 0 rgba(0, 0, 0, 0.1), 3px -3px 0 #31302e");
+  }
+
+  .input-search {
+    border: 0;
+    background-color: transparent;
+    .placeholder (#FFF);
+    .transition (all 0.5s ease-in-out);
+    border-radius: 0;
+    width: 120px;
+
+    &:focus {
+      background-color: #FFF;
+      .placeholder (@gray);
+      outline: none;
+      width: 300px;
+
+      &+ .btn-search {
+        color: @brand;
+      }
+    }
+  }
+  .btn-search {
+    position: relative;
+    left: -40px;
+    line-height: 21px;
+    &:hover {
+      color: #FFF;
+    }
+    &:active {
+      .box-shadow (none);
+    }
+  }
+  .btn-none {
+    border-radius: 0;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+/* Body */
+body {
+  background-color: darken(@gray-dark, 20%);
+}
+/* Content */
+.content {
+  background-color: @body-bg;
+}
+/* Appbar */
+.appbar {
+  background-color: darken(@gray-dark, 20%);
+
+  hr {
+    border-top-color: darken(@gray-dark, 15%);
+  }
+
+  & > ul > li > a {
+    color: darken(@gray, 5%);
+    font-size: 20px;
+
+    &:hover {
+      background-color: darken(@gray-dark, 12%);
+      color: lighten(@gray, 2%);
+
+      svg {
+        .opacity (1);
+      }
+    }
+    svg {
+      .opacity (0.5);
+    }
+  }
+  & > ul > li.active > a {
+    &, &:hover {
+      background-color: darken(@gray-dark, 15%);
+      color: lighten(@gray, 20%);
+    }
+    svg {
+      .opacity (1);
+    }
+  }
+  .appbar-brand {
+    font-size: 24px;
+    font-family: "Open Sans Light";
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .nav-heading {
+    color: #FFF;
+  }
+
+  a {
+    color: @brand-toupe;
+  }
+  & > ul.tags > li > a {
+    color: @text-color;
+  }
+}
+/* Sidebar */
+.sidebar,
+.aside {
+  background-color: darken(@gray-dark, 10%);
+
+  hr {
+    border-top-color: darken(@gray-dark, 15%);
+  }
+
+  & > ul > li > a {
+    color: @brand-toupe;
+
+    &:hover {
+      background-color: darken(@gray-dark, 2%);
+    }
+  }
+  & > ul > li.active > a {
+    &, &:hover {
+      background-color: darken(@gray-dark, 15%);
+      color: #FFF;
+    }
+  }
+  .sidebar-brand {
+    display: inline-block;
+    margin-top: 4px;
+    float: left;
+    font-size: 22px;
+    letter-spacing: -1px;
+    font-family: "Montserrat";
+    color: @brand-warning;
+
+    &:hover {
+      text-decoration: none;
+      color: @brand-warning-light;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 6px;
+      margin-top: 6px;
+      float: left;
+    }
+  }
+  .nav-heading {
+    color: #FFF;
+  }
+
+  a {
+    color: @brand-toupe;
+  }
+  & > ul.tags > li > a {
+    color: @text-color;
+  }
+}
+.sidebar {
+  .nav {
+    text-transform: uppercase;
+  }
+}
+/* Navbar Bottom */
+.navbar-fixed-bottom {
+  .box-shadow (0 -3px 0 rgba(0, 0, 0, 0.03));
+  background-color: rgba(237, 242, 248, 0.85);
+}
+/* Media */
+.media-text {
+  color: lighten(@gray, 18%);
+}
+.media-heading {
+  font-weight: 500;
+}
+.media {
+  svg {
+    height: 32px;
+    width: 32px;
+  }
+}
+.featured {
+  svg {
+    height: 64px;
+    width: 64px;
+    margin: 10px auto;
+  }
+}
+/* Grid */
+.row-grid {
+  .thumbnail {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    min-height: 83px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+/* Event */
+.media-event {
+  border: 1px solid @gray-lighter;
+  background-color: lighten(@gray-lighter, 20%);
+}
+/* Textarea */
+.magic-box {
+  .box-shadow (none);
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+
+  &:focus,
+  &:active {
+    background-color: #fff;
+    .placeholder (lighten(@text-color, 20%));
+  }
+}
+/* Thumbnail */
+.thumbnail {
+  a {
+    color: @brand-toupe;
+  }
+}
+/* Booze */
+.icon-distilleree {
+  display: inline-block;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+/* List Group */
+.list-group-item-tall {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+.list-group-striped {
+  > .list-group-item:nth-child(odd) {
+    background-color: lighten(@list-group-bg, 2%);
+  }
+  > a.list-group-item:nth-child(odd):hover,
+  > a.list-group-item:nth-child(odd):focus {
+    text-decoration: none;
+    background-color: @list-group-hover-bg;
+  }
+}
+/* Panels */
+.panel-title {
+  text-transform: uppercase;
+}
+.panel {
+  & > .btn-group {
+    & > .btn {
+      border-width: 1px;
+    }
+  }
+}
+/* Forms */
+.form-control {
+  .box-shadow (none);
+  border-width: 2px;
+}
+.form-control.input-xs {
+  border-width: 1px;
+}
+.input-xs {
+  .input-size(@input-height-small - 10; @padding-small-vertical - 2; @padding-small-horizontal - 2; @font-size-small - 2; @line-height-small - 10; @border-radius-small);
+}
+/* iCheckbox */
+.text-center > [class*="icheckbox"] {
+  margin: 0 auto;
+}
+/* Dropdown */
+.dropdown-menu {
+  border-width: 2px;
+}
+.dropdown-menu .divider {
+  height: 2px;
+}
+.dropdown-menu::after {
+  position: absolute;
+  top: -6px;
+  left: 10%;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid @body-bg;
+  border-left: 6px solid transparent;
+  content: '';
+}
+.dropdown-menu.pull-right::after {
+  left: 90%;
+}

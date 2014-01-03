@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Big Data by Kyle Ledbetter</title>
+	<link href="assets/css/application.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond/respond.min.js"></script>
+	<![endif]-->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<link href="assets/ico/favicon.png" rel="shortcut icon" type="image/x-icon" />
+	<script src="assets/js/modernizr.custom.js"></script>
+</head>
+<body class="no-touch">
+	<header class="header header-primary header-sidebar header-appbar">
+		<a class="sidebar-toggle pull-left btn btn-lg btn-none"><span aria-hidden="true" class="icon-menu-3"></span></a>
+		<div class="dropdown pull-right">
+			<a data-toggle="dropdown" href="#" class="btn btn-lg btn-none"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" width="20" alt="..."> Michael <span aria-hidden="true" class="icon-arrow-down-2 text-sm"></span></a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#">View Profile</a></li>
+				<li><a href="#">Edit Account</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Sign Out</a></li>
+			</ul>
+		</div>
+		<form>
+			<input type="search" class="input-search input-lg pull-left" placeholder="Search"><a class="btn btn-lg btn-search pull-left"><span aria-hidden="true" class="icon-search"></span></a>
+		</form>
+	</header>
+	<!-- begin content -->
+	<div class="content content-sidebar content-appbar">
+		<div class="page-header">
+			<h2>New Combined Source <small>combine two or more sources</small></h2>
+		</div>
+		<div class="row">
+			<!-- begin column -->
+			<div class="col-md-7">
+				<h3>Select Sources</h3>
+				<form role="form">
+					<div class="form-group">
+						<p class="text-label">Source One</p>
+						<select class="select2" style="width:100%">
+							<option>Select Source</option>
+							<option>Facebook</option>
+							<option>Twitter</option>
+							<option>LinkedIn</option>
+							<option>Website</option>
+							<option>Laser Scanner</option>
+							<option>iPhone App</option>
+							<option>iPad App</option>
+							<option>Android App</option>
+							<option>Point of Sale</option>
+							<option>Power Meter</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<p class="text-label">Source Two</p>
+						<select class="select2" style="width:100%">
+							<option>Select Source</option>
+							<option>Facebook</option>
+							<option>Twitter</option>
+							<option>LinkedIn</option>
+							<option>Website</option>
+							<option>Laser Scanner</option>
+							<option>iPhone App</option>
+							<option>iPad App</option>
+							<option>Android App</option>
+							<option>Point of Sale</option>
+							<option>Power Meter</option>
+						</select>
+					</div>
+					<div class="collapse collapse-source in">
+						<div class="form-group">
+							<p class="text-label">Additional Source</p>
+							<a href=".collapse-source" data-toggle="collapse" class="btn btn-sm btn-info">Add Another Source</a>
+						</div>
+					</div>
+					<div class="collapse collapse-source">
+						<div class="form-group">
+							<p class="text-label">Source Three</p>
+							<select class="select2" style="width:100%">
+								<option>Select Source</option>
+								<option>Facebook</option>
+								<option>Twitter</option>
+								<option>LinkedIn</option>
+								<option>Website</option>
+								<option>Laser Scanner</option>
+								<option>iPhone App</option>
+								<option>iPad App</option>
+								<option>Android App</option>
+								<option>Point of Sale</option>
+								<option>Power Meter</option>
+							</select>
+						</div>
+					</div>
+					<hr />
+					<h3>Combined Source Info</h3>
+					<div class="form-group">
+						<span class="text-sm text-muted pull-right">50 char max</span>
+						<label for="sourceName">Source Name</label>
+						<input type="text" class="form-control" id="sourceName" placeholder="Enter name">
+					</div>
+					<div class="form-group">
+						<span class="text-sm text-muted pull-right">255 char max</span>
+						<label for="sourceDesc">Source Description</label>
+						<textarea class="form-control" id="sourceDesc" placeholder="Enter short desc"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="contactName">Contact Name</label>
+						<input type="text" class="form-control" id="contactName" placeholder="Name of contact">
+					</div>
+					<div class="form-group">
+						<label for="contactEmail">Contact Email</label>
+						<input type="email" class="form-control" id="contactEmail" placeholder="Contact email">
+					</div>
+					<div class="form-group">
+						<span class="text-sm text-muted pull-right">optional</span>
+						<label for="sourceUrl">Source Url</label>
+						<input type="text" class="form-control" id="sourceUrl" placeholder="http://">
+					</div>
+				</form>
+			</div>
+			<!-- end column -->
+			<!-- begin column -->
+			<div class="col-md-5">
+				<h3>Summary</h3>
+				<div class="well">
+					<h4>Combined Sources</h4>
+					<div class="list-group">
+						<div class="list-group-item">
+							<a class="close" data-dismiss="alert" href="#" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="Remove this source">&times;</a>
+							Facebook
+						</div>
+						<div class="list-group-item">
+							<a class="close" data-dismiss="alert" href="#" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="Remove this source">&times;</a>
+							Twitter
+						</div>
+						<div class="list-group-item">
+							<a class="close" data-dismiss="alert" href="#" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="Remove this source">&times;</a>
+							LinkedIn
+						</div>
+					</div>
+					<div class="form-group">
+						<p class="text-muted text-sm push-top-sm">A note about combined sources.</p>
+					</div>
+				</div>
+			</div>
+			<!-- end column -->
+		</div>
+		<hr />
+		<footer class="text-center text-sm text-muted">
+			<p>&copy; 2014 Kyle Ledbetter, Inc.</p>
+		</footer>
+	</div>
+	<!-- end content -->
+	<!-- begin bottom nav -->
+	<nav class="navbar navbar-default navbar-fixed-bottom text-center" role="navigation">
+		<div class="btn-toolbar pull-right">
+			<div class="btn-group">
+				<a href="measure-metrics.html" class="btn btn-default">Next</a>
+			</div>
+			<div class="btn-group">
+				<a href="sources.html" class="btn btn-success">Save</a>
+			</div>
+		</div>
+		<div class="btn-toolbar pull-left">
+			<div class="btn-group">
+				<a href="sources.html" class="btn btn-danger">Cancel</a>
+			</div>
+			<div class="btn-group">
+				<a href="sources.html" class="btn btn-default">Back</a>
+			</div>
+		</div>
+		<ol class="list-inline steps">
+			<li class="active"><a href="new-source.html">Info &amp; Setup</a></li>
+			<li><a href="measure-metrics.html">Measure Metrics</a></li>
+			<li><a href="persist-data.html">Persist Data</a></li>
+		</ol>
+	</nav>
+	<!-- end bottom nav -->
+	<!-- begin appbar -->
+	<div class="appbar">
+		<ul class="nav nav-stacked text-center">
+			<li class="">
+				<a href="index.html" data-toggle="tooltip" data-placement="bottom" title="App Store">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#store"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="active">
+				<a href="realtime.html" data-toggle="tooltip" data-placement="bottom" title="Realtime">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#clock"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Insights">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#eye"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="App Launcher">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#rocket"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Revenue">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#bill"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="File Repo">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#cloud-up"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Cron Calculator">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#calc"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Docs">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#bookshelf"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Notification Center">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#open-letter"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Web Manager">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#www"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+		</ul>
+		<hr />
+	</div>
+	<!-- end appbar -->
+
+	<!-- begin sidebar -->
+	<div class="sidebar sidebar-appbar">
+		<div class="sidebar-heading">
+			<a class="appbar-toggle pull-left btn btn-lg btn-none"><span aria-hidden="true" class="icon-grid-3"></span></a>
+			<a class="sidebar-brand" href="#">
+				<span class="icon-database text-md"></span> 
+				Big Data
+			</a>
+		</div>
+		<ul class="nav nav-stacked">
+			<li class=""><a href="realtime.html"><span aria-hidden="true" class="icon-dashboard text-warning"></span> Dashboard</a></li>
+			<li class="active"><a href="sources.html"><span aria-hidden="true" class="icon-cube4 text-warning"></span> Data Sources</a></li>
+			<li class=""><a href="metrics.html"><span aria-hidden="true" class="icon-chart text-warning"></span> Metrics</a></li>
+			<li class=""><a href="users.html"><span aria-hidden="true" class="icon-users text-warning"></span> Users</a></li>
+		</ul>
+		<hr />
+	</div>
+	<!-- end sidebar -->
+
+	
+	<!-- begin modal -->
+	<div class="modal fade modal-chat-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object img-circle" src="assets/images/avatars/tobias_128.jpg" alt="..." width="28">
+						</a>
+						<div class="media-body">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4>Tobias Funke</h4>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body">
+					<h5 class="text-large">Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</h5>
+					<div class="text-muted">12:48 PM - 9/09/2013</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end modal -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/application.js"></script>
+
+	<script>
+      var url ='assets/svg/icons.svg';
+      var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
+      document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
+    </script>
+
+    <link href="assets/icheck/square/grey.css" rel="stylesheet">
+	<script src="assets/js/jquery.icheck.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('input[type=checkbox], input[type=radio]').iCheck({
+			checkboxClass: 'icheckbox_square-grey pull-left',
+			radioClass: 'iradio_square-grey',
+			increaseArea: '20%' // optional
+		});
+	});
+	</script>
+
+	<script src="assets/js/select2/select2.js"></script>
+	<script>
+		$(function () {
+			$(".select2").select2({minimumResultsForSearch: 10});
+		});
+	</script>
+</body>
+</html>

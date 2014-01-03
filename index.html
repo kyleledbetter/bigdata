@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Big Data by Kyle Ledbetter</title>
+	<link href="assets/css/application.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond/respond.min.js"></script>
+	<![endif]-->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<link href="assets/ico/favicon.png" rel="shortcut icon" type="image/x-icon" />
+	<script src="assets/js/modernizr.custom.js"></script>
+</head>
+<body class="no-touch">
+	<header class="header header-primary header-sidebar header-appbar">
+		<a class="sidebar-toggle pull-left btn btn-lg btn-none"><span aria-hidden="true" class="icon-menu-3"></span></a>
+		<div class="dropdown pull-right">
+			<a data-toggle="dropdown" href="#" class="btn btn-lg btn-none"><img class="img-circle" src="assets/images/avatars/michael_128.jpg" width="20" alt="..."> Michael <span aria-hidden="true" class="icon-arrow-down-2 text-sm"></span></a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#">View Profile</a></li>
+				<li><a href="#">Edit Account</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Sign Out</a></li>
+			</ul>
+		</div>
+		<form>
+			<input type="search" class="input-search input-lg pull-left" placeholder="Search"><a class="btn btn-lg btn-search pull-left"><span aria-hidden="true" class="icon-search"></span></a>
+		</form>
+	</header>
+	<!-- begin content -->
+	<div class="content content-sidebar content-appbar">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="list-group list-group-striped">
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="row">
+							<div class="col-sm-3">
+								<h4 class="page-header push-top-sm">
+								 	Networking
+								</h4>
+								<div class="featured text-center">
+									<h6>Featured App</h6>
+									<svg viewBox="0 0 32 32">
+										<g filter="">
+											<use xlink:href="#www"></use>
+										</g>
+									</svg>
+									<a href="#" class="h5">Application Name</a>
+									<div class="h6">
+										Cras sit amet nibh libero.
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-9">
+								<div class="row row-grid">
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#umbrella"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Dedicated Networks
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#rocket"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Virtual Servers
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#bookshelf"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Domain Names
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#backpack"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Cloud Resources
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#cloud-up"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Network Diagram
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#map"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Connectivity Application
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="row">
+							<div class="col-sm-3">
+								<h4 class="page-header push-top-sm">
+								 	Database
+								</h4>
+								<div class="featured text-center">
+									<h6>Featured App</h6>
+									<svg viewBox="0 0 32 32">
+										<g filter="">
+											<use xlink:href="#store"></use>
+										</g>
+									</svg>
+									<a href="#" class="h5">Data Marts</a>
+									<div class="h6">
+										Cras sit amet nibh libero.
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-9">
+								<div class="row row-grid">
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#backpack-2"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Teradata Instances
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#chalkboard"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Hadoop Instances
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#candy"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														MongoDB Instances
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#cloud-check"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Data Warehouse
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#flag"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														In Memory Cache
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#drop"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="row">
+							<div class="col-sm-3">
+								<h4 class="page-header push-top-sm">
+								 	Analytics
+								</h4>
+								<div class="featured text-center">
+									<h6>Featured App</h6>
+									<svg viewBox="0 0 32 32">
+										<g filter="">
+											<use xlink:href="#clock"></use>
+										</g>
+									</svg>
+									<a href="#" class="h5">Application Name</a>
+									<div class="h6">
+										Cras sit amet nibh libero.
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-9">
+								<div class="row row-grid">
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#cloud-up"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#eye"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#candy"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#map2"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#mountain"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#medicine"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+					<!-- begin item -->
+					<div class="list-group-item">
+						<div class="row">
+							<div class="col-sm-3">
+								<h4 class="page-header push-top-sm">
+								 	Storage
+								</h4>
+								<div class="featured text-center">
+									<h6>Featured App</h6>
+									<svg viewBox="0 0 32 32">
+										<g filter="">
+											<use xlink:href="#cloud-up"></use>
+										</g>
+									</svg>
+									<a href="#" class="h5">Application Name</a>
+									<div class="h6">
+										Cras sit amet nibh libero.
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-9">
+								<div class="row row-grid">
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#open-letter"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#sale"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#speakers"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#tactic"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#watch"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-sm-4">
+										<a href="#" class="thumbnail">
+											<div class="media">
+												<svg viewBox="0 0 32 32" class="pull-left">
+													<g filter="">
+														<use xlink:href="#toaster"></use>
+													</g>
+												</svg>
+												<div class="media-body">
+													<h5 class="media-heading">
+														Application Name
+													</h5>
+													<div class="h6">
+														Cras sit amet nibh libero.
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end item -->
+				</div>
+			</div>
+		</div>
+
+		<hr />
+		<footer class="text-center text-sm text-muted">
+			<p>&copy; 2014 Kyle Ledbetter, Inc.</p>
+		</footer>
+	</div>
+	<!-- end content -->
+
+	<!-- begin appbar -->
+	<div class="appbar">
+		<ul class="nav nav-stacked text-center">
+			<li class="active">
+				<a href="index.html" data-toggle="tooltip" data-placement="bottom" title="App Store">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#store"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="realtime.html" data-toggle="tooltip" data-placement="bottom" title="Realtime">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#clock"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Insights">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#eye"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="App Launcher">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#rocket"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Revenue">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#bill"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="File Repo">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#cloud-up"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Cron Calculator">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#calc"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Docs">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#bookshelf"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Notification Center">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#open-letter"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+			<li class="">
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Web Manager">
+					<svg viewBox="0 0 32 32">
+					<g filter="">
+					<use xlink:href="#www"></use>
+					</g>
+					</svg>
+				</a>
+			</li>
+		</ul>
+		<hr />
+	</div>
+	<!-- end appbar -->
+
+	<!-- begin sidebar -->
+	<div class="sidebar sidebar-appbar">
+		<div class="sidebar-heading">
+			<a class="appbar-toggle pull-left btn btn-lg btn-none"><span aria-hidden="true" class="icon-grid-3"></span></a>
+			<a class="sidebar-brand" href="#">
+				<span class="icon-database text-md"></span> 
+				Big Data
+			</a>
+		</div>
+		<ul class="nav nav-stacked">
+			<li class="active"><a href="apps.html"><span aria-hidden="true" class="icon-basket text-warning"></span> All Apps</a></li>
+			<li class=""><a href="#"><span aria-hidden="true" class="icon-tree text-warning"></span> Networking</a></li>
+			<li class=""><a href="#"><span aria-hidden="true" class="icon-database text-warning"></span> Database</a></li>
+			<li class=""><a href="#"><span aria-hidden="true" class="icon-chart text-warning"></span> Analytics</a></li>
+			<li class=""><a href="#"><span aria-hidden="true" class="icon-cloud text-warning"></span> Storage</a></li>
+			<li class=""><a href="#"><span aria-hidden="true" class="icon-package text-warning"></span> Deployment</a></li>
+			<li class=""><a href="#"><span aria-hidden="true" class="icon-cogs text-warning"></span> Services</a></li>
+		</ul>
+		<hr />
+	</div>
+	<!-- end sidebar -->
+
+	
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/application.js"></script>
+
+	<script>
+      var url ='assets/svg/icons.svg';
+      var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
+      document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
+    </script>
+
+
+</body>
+</html>
